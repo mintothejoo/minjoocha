@@ -1,3 +1,11 @@
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+h4{
+    margin-top: 30px;
+    vertical-align: center;
+}
 .element{
     font-family: 'Kalam', cursive;
     font-size: 40px;
@@ -12,7 +20,15 @@
     opacity:0.9;
 }
 
+#name{
+    font-size: 40px;
+    color:gray;
 
+}
+
+#name:hover{
+    color:white;
+}
 
 
 #menu, #footer, .row{
@@ -48,5 +64,98 @@
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+/* ---- grid ---- */
+
+/* ---- grid ---- */
+
+/* ---- grid ---- */
+
+#masonry {
+  height: 75%; /* inherit height from body */
+  margin: 0 auto;
+}
+
+/* clear fix */
+#masonry:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.2%;
+}
+
+.grid-item {
+  float: left;
+  margin-bottom:15px;
+}
+
+.grid-item img {
+  display: block;
+  width: 100.5%;
+}
+
+
+@media (max-width: 930px) {
+    .grid-sizer,
+.grid-item{ width: 33.3%; }
+}
+
+@media (max-width: 800px) {
+    .grid-sizer,
+.grid-item { width: 50%; }
+}
+
+@media (max-width: 450px) {
+    .grid-sizer,
+.grid-item { width: 100%; }
+}
+
+/**** Start: Recommended Isotope styles ****/
+/**** Isotope Filtering ****/
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+/**** Isotope CSS3 transitions ****/
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity;
+/*    -webkit-transition-delay: 0s, 0.8s, 0s;
+    -moz-transition-delay: 0s, 0.8s, 0s;
+    -ms-transition-delay: 0s, 0.8s, 0s;
+    -o-transition-delay: 0s, 0.8s, 0s;
+    transition-delay: 0s, 0.8s, 0s;*/
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s;
 }
 

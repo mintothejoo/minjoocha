@@ -9,7 +9,9 @@
 //     });
 // }
 
+
 $(document).ready(function(){
+	
 
 	$(".element").typed({
 		strings: ["I can <u>Create</u>.","I can <u>Design</u>.","I can <u>Engineer</u>.","I'm <u>Minjoo Cha</u>."],
@@ -64,6 +66,27 @@ $(document).ready(function(){
 
 			}
 	});
+
+	var $grid = $('#masonry').isotope({
+	  itemSelector: '.grid-item',
+	  percentPosition: true,
+	  gutter:20,
+	  masonry: {
+	    columnWidth: '.grid-sizer',
+	    gutter:10,
+	    fitWidth:true
+	  }
+	});
+	// layout Isotope after each image loads
+	$grid.imagesLoaded().progress( function() {
+	  $grid.isotope('layout');
+	});  
+
+	$(window).on('resize', function(){
+   		$('#masonry').isotope('reLayout')
+	});
+
+
 
 });
 
