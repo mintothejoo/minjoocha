@@ -20,6 +20,11 @@ h4{
     opacity:0.9;
 }
 
+#fixedMenu{
+    visibility: hidden;
+    height:70px;
+    border:0;
+}
 #name{
     font-size: 40px;
     color:gray;
@@ -159,3 +164,7 @@ h4{
     transition-duration: 0s;
 }
 
+/*Footer*/
+#footer .ten.wide.column{
+    margin-top: 10px;
+}

@@ -11,7 +11,18 @@
 
 
 $(document).ready(function(){
-	
+	$('.masthead').visibility({
+	      once: false,
+	      onBottomPassed: function() {
+	      	$('#verticalNav').transition('fade out');
+	      	$('#fixedMenu').transition('fade in');
+	      },
+	      onBottomPassedReverse: function() {
+	      	$('#verticalNav').transition('fade in');
+	      	$('#fixedMenu').transition('fade out');
+	      }
+    });
+ 
 
 	$(".element").typed({
 		strings: ["I can <u>Create</u>.","I can <u>Design</u>.","I can <u>Engineer</u>.","I'm <u>Minjoo Cha</u>."],
@@ -83,7 +94,7 @@ $(document).ready(function(){
 	});  
 
 	$(window).on('resize', function(){
-   		$('#masonry').isotope('reLayout')
+   		$('#masonry').isotope('relayout')
 	});
 
 
