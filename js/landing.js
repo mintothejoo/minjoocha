@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$(".element").typed({
-		strings: ["Hi. ^1000 I'm Minjoo"],
+		strings: ["Hi. ^1000 I'm Minjoo"," I Create.","I Design.","I Engineer."],
 		typeSpeed: 0,
 		backspace: function(curString,curStrPos){
 			setTimeout(function(){

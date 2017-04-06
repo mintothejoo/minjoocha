@@ -3,6 +3,16 @@
     font-size: 40px;
 }
 
+#masthead{
+    background: url("https://source.unsplash.com/collection/654220");
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+
+#circularImage{
+    margin-bottom: 20px;
+    max-width: 1000px;
+}
 
 .typed-cursor{
     opacity: 1;
