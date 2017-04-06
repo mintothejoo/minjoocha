@@ -1,18 +1,69 @@
+
+// $.fn.typed = function (option) {
+//     return this.each(function () {
+//       var $this = $(this)
+//         , data = $this.data('typed')
+//         , options = typeof option == 'object' && option
+//       if (!data) $this.data('typed', (data = new Typed(this, options)))
+//       if (typeof option == 'string') data[option]()
+//     });
+// }
+
 $(document).ready(function(){
 
 	$(".element").typed({
-		strings: ["Hi. ^1000 I'm Minjoo"," I Create.","I Design.","I Engineer."],
-		typeSpeed: 0,
-		backspace: function(curString,curStrPos){
-			setTimeout(function(){
-				if(self.arrayPos == 0 && self.arrayPos == 2){
-					self.stopNum=3;
-				}
-				else{
-					self.stopNum=4;
-				}
-			})
-		}
+		strings: ["I can <u>Create</u>.","I can <u>Design</u>.","I can <u>Engineer</u>.","I'm <u>Minjoo Cha</u>."],
+		typeSpeed: 50,
+		backDelay: 1000,
+		backspace: function(curString, curStrPos){
+
+				// varying values for setTimeout during typing
+				// can't be global since number changes each time loop is executed
+				var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+				var self = this;
+
+				setTimeout(function() {
+
+					// ----- this part is optional ----- //
+					// check string array position
+					// on the first string, only delete one word
+					// the stopNum actually represents the amount of chars to
+					// keep in the current string. In my case it's 14.
+					 if (self.arrayPos == 1, 2, 3, 4){
+						self.stopNum = 5;
+					 }
+					//every other time, delete the whole typed string
+					 //else{
+						//self.stopNum = 0;
+					 //}
+
+					// ----- continue important stuff ----- //
+					// replace text with current text + typed characters
+					self.el.text(self.text + curString.substr(0, curStrPos));
+
+					// if the number (id of character in current string) is
+					// less than the stop number, keep going
+					if (curStrPos > self.stopNum){
+						// subtract characters one by one
+						curStrPos--;
+						// loop the function
+						self.backspace(curString, curStrPos);
+					}
+					// if the stop number has been reached, increase
+					// array position to next string
+					else if (curStrPos <= self.stopNum){
+						clearTimeout(clear);
+						var clear = self.arrayPos = self.arrayPos+1;
+						// must pass new array position in this instance
+						// instead of using global arrayPos
+						self.typewrite(self.strings[self.arrayPos], curStrPos);
+					}
+
+				// humanized value for typing
+				}, humanize);
+
+			}
 	});
 
 });
+
