@@ -22,7 +22,26 @@ $(document).ready(function(){
 	      	$('#fixedMenu').transition('fade out');
 	      }
     });
- 
+
+	// console.log($(window).scrollTop().valueOf());
+ //    $(window).scroll(function (e){
+ //    	console.log($(window).scrollTop());
+	// 	if ($(this).scrollTop > 100) {//Show the slider after scrolling down 100px
+	//         $('#verticalNav').transition('fade out');
+	// 	    $('#fixedMenu').transition('fade in');
+	// 	}
+	//     else{
+	//         $('#verticalNav').transition('fade in');
+	// 	    $('#fixedMenu').transition('fade out');
+	// 	}
+
+ //    });
+
+    // $('#menu').visibility({
+    // 	type:'fixed',
+    // 	offset:15
+    // })
+
 
 	$(".element").typed({
 		strings: ["I can <u>Create</u>.","I can <u>Design</u>.","I can <u>Engineer</u>.","I'm <u>Minjoo Cha</u>."],
@@ -94,7 +113,7 @@ $(document).ready(function(){
 	});  
 
 	$(window).on('resize', function(){
-   		$('#masonry').isotope('relayout')
+   		$('#masonry').isotope('layout')
 	});
 
 
