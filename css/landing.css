@@ -6,9 +6,14 @@ html {
     display: table;
 }
 h4{
+    font-family: 'poppins', cursive;
     margin-top: 30px;
     vertical-align: center;
 }
+#menu, #fixedMenu{
+    font-family: 'poppins', cursive;
+}
+
 .element{
     font-family: 'Kalam', cursive;
     font-size: 40px;
@@ -170,4 +175,21 @@ h4{
 /*Footer*/
 #footer .ten.wide.column{
     margin-top: 10px;
+}
+
+.label{
+    font-family: 'poppins', cursive;
+    font-weight: 300;
+}
+
+
+.grid-item:hover {
+    transition: all 0.2s ease;
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.ui.image{
+    box-shadow: 4px 5px 3px #828282;
 }
