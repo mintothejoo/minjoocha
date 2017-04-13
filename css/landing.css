@@ -97,6 +97,8 @@ h4{
   clear: both;
 }
 
+#masonry.ui.container{}
+
 /* ---- .grid-item ---- */
 
 /* ---- .grid-item ---- */
@@ -119,7 +121,7 @@ h4{
 
 @media (max-width: 930px) {
     .grid-sizer,
-.grid-item{ width: 33.3%; }
+.grid-item{ width: 33.1%; }
 }
 
 @media (max-width: 800px) {
@@ -183,7 +185,7 @@ h4{
 }
 
 
-.grid-item:hover {
+#landingGrid:hover {
     transition: all 0.2s ease;
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
@@ -193,3 +195,6 @@ h4{
 .ui.image{
     box-shadow: 4px 5px 3px #828282;
 }
+
+
+
