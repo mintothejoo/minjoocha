@@ -23,6 +23,17 @@ $(document).ready(function(){
 	      }
     });
 
+    $('.ui.footer').visibility({
+    	once:false,
+    	onTopVisible: function(){
+    		console.log("HIHI");
+    		$('#verticalNav').transition('fade out');
+    	},
+    	onTopVisibleReverse: function(){
+    		$('#verticalNav').transition('fade in');
+    	}
+    });
+
 	// console.log($(window).scrollTop().valueOf());
  //    $(window).scroll(function (e){
  //    	console.log($(window).scrollTop());
@@ -42,6 +53,66 @@ $(document).ready(function(){
     // 	offset:15
     // })
 
+    $(".elementSkills").typed({
+		strings: ["Here are my <u>Skills</u>."],
+		typeSpeed: 50,
+		backDelay: 1000,
+	});
+
+
+    $(".elementAbout").typed({
+		strings: ["This is <u>Who I am</u>.","This is <u>What I love</u>.","This is <u>About Me</u>."],
+		typeSpeed: 50,
+		backDelay: 1000,
+		backspace: function(curString, curStrPos){
+
+				// varying values for setTimeout during typing
+				// can't be global since number changes each time loop is executed
+				var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+				var self = this;
+
+				setTimeout(function() {
+
+					// ----- this part is optional ----- //
+					// check string array position
+					// on the first string, only delete one word
+					// the stopNum actually represents the amount of chars to
+					// keep in the current string. In my case it's 14.
+					 if (self.arrayPos == 1, 2, 3, 4){
+						self.stopNum = 5;
+					 }
+					//every other time, delete the whole typed string
+					 //else{
+						//self.stopNum = 0;
+					 //}
+
+					// ----- continue important stuff ----- //
+					// replace text with current text + typed characters
+					self.el.text(self.text + curString.substr(0, curStrPos));
+
+					// if the number (id of character in current string) is
+					// less than the stop number, keep going
+					if (curStrPos > self.stopNum){
+						// subtract characters one by one
+						curStrPos--;
+						// loop the function
+						self.backspace(curString, curStrPos);
+					}
+					// if the stop number has been reached, increase
+					// array position to next string
+					else if (curStrPos <= self.stopNum){
+						clearTimeout(clear);
+						var clear = self.arrayPos = self.arrayPos+1;
+						// must pass new array position in this instance
+						// instead of using global arrayPos
+						self.typewrite(self.strings[self.arrayPos], curStrPos);
+					}
+
+				// humanized value for typing
+				}, humanize);
+
+			}
+	});
 
 	$(".element").typed({
 		strings: ["I can <u>Create</u>.","I can <u>Design</u>.","I can <u>Engineer</u>.","I'm <u>Minjoo Cha</u>."],
@@ -116,6 +187,24 @@ $(document).ready(function(){
    		$('#masonry').isotope('layout')
 	});
 
+	$(".ui.dropdown").dropdown({
+
+		action: 'combo',
+		onChange: function(value,text,$selectedItem){
+			$grid.isotope({filter : value.toString()});
+		}
+	});
+
+	// Screen resolutions
+
+	// tablet
+	if($(window).width()<=799 && $(window).width()>425){
+
+	}
+	// mobile
+	if($(window).width()<=425){
+
+	}
 
 });
 

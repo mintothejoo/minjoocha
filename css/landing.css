@@ -1,10 +1,24 @@
-* { box-sizing: border-box; }
+/** { box-sizing: border-box; }*/
 
 /* force scrollbar */
-html { 
+/*html { 
     width:100%; 
     display: table;
+}*/
+
+/*body{
+    width:100%;
+    display: table;
+}*/
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
+
 h4{
     font-family: 'poppins', cursive;
     margin-top: 30px;
@@ -14,7 +28,10 @@ h4{
     font-family: 'poppins', cursive;
 }
 
-.element{
+.ui.fluid.card{
+    font-family: 'poppins', cursive;
+}
+.element, .elementAbout, .elementSkills{
     font-family: 'Kalam', cursive;
     font-size: 40px;
 }
@@ -36,7 +53,6 @@ h4{
 #name{
     font-size: 40px;
     color:gray;
-
 }
 
 #name:hover{
@@ -48,6 +64,9 @@ h4{
     margin-left: 20px;
     margin-right: 20px;
     border: 0;
+}
+#footer .ten.wide.column{
+    text-align: center;
 }
 #circularImage{
     margin-bottom: 20px;
@@ -86,7 +105,8 @@ h4{
 /* ---- grid ---- */
 
 #masonry {
-    /*width:1200px!important;*/
+    width:1200px!important;
+    display: table;
     height: 75%; /* inherit height from body */
     margin: 0 auto;
 }
@@ -105,7 +125,7 @@ h4{
 
 .grid-sizer,
 .grid-item {
-    width: 33.2%; 
+    width: 33.3%; 
 }
 
 .grid-item {
@@ -118,38 +138,64 @@ h4{
   width: 100.5%;
 }
 
-@media(max-width: 1199px){
+@media(max-width: 1212px){
     #masonry{
         width:1000px!important;
     }
 }
-@media(max-width: 999px){
+@media(max-width: 1033px){
      #masonry{
         width:800px!important;
     }
+    #footer #dirCol{
+        padding-top:15px!important;
+        padding-bottom: 10px!important;
+    }
 }
-@media(max-width: 799px){
+@media(max-width: 833px){
+    #fixedMenu{
+        visibility: hidden!important;
+    }
+    #verticalNav{
+        visibility: hidden!important;
+    }
+    #masthead #circularImage{
+        width:200px;
+    }
+    .element, .elementAbout, .elementSkills{
+        font-family: 'Kalam', cursive;
+        font-size: 30px;
+    }
+    #menu #name, #fixedMenu{
+        font-family: 'poppins', cursive;
+        font-size: 30px;
+    }
     .grid-sizer, .grid-item { 
         width: 50%;
     }
      #masonry{
         width:600px!important;
     }
+    #masonry .ui.label{
+        font-size: 10px;
+    }
+
 }
-@media(max-width: 499px){
+@media(max-width: 608px){
     .grid-sizer, .grid-item { 
         width: 100%;
     }
-    /* #masonry{
-        width:400px!important;
-    }*/
+     #masonry{
+        width:300px!important;
+    }
+
 }
-/*@media(max-width: 399px){
+@media(max-width: 399px){
     
      #masonry{
-        width:200px!important;
+        width:250px!important;
     }
-}*/
+}
 
 /**** Start: Recommended Isotope styles ****/
 /**** Isotope Filtering ****/
@@ -212,9 +258,6 @@ h4{
 .ui.image{
     box-shadow: 4px 5px 3px #828282;
 }
-
-
-
 
 
 

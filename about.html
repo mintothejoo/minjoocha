@@ -38,35 +38,133 @@
 
 <body>
 
+	<div id = "masthead" class = "ui inverted vertical masthead center aligned segment">
+		<div class = "ui container"> 
+
+			<div id="menu" class = "ui large secondary inverted pointing menu">
+				<a id="name" class = "item" href="index.html">
+					-Minjoo Cha-
+				</a>
+				<div class = "right item">
+					<a class = "item">Projects</a>
+					<a class = "item" href="skills.html">Skills</a>
+					<a class = "item">Blog</a>
+					<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+<!-- 		<img id = "circularImage" class = "ui medium centered circular image" src="img/minjoo.jpg"> -->
+		<span class="elementAbout"></span>
+
+		<br>
+		<br>
+		<br>
+		<div class = "ui container">
+			<select name="skills" multiple="" class="ui inverted dropdown">
+			  	<option value="">Filter</option>
+				<option value=".hobbies" data-filter="hobbies">Hobbies</option>
+				<option value=".interests" data-filter="interests">Interests</option>
+			</select>
+		</div>
+		<br>
+		<br>
+	</div>
+
+	
+	<div id="fixedMenu" class = "ui fixed small borderless pointing menu">
+		<div class = "ui container"> 
+			<a id="name" class = "item" href="#">
+				Minjoo Cha
+			</a>
+
+			<div class = "right item">
+				<a class = "item">Projects</a>
+				<a class = "item" href="skills.html">Skills</a>
+				<a class = "item">Blog</a>
+				<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
+			</div>
+		</div>
+	</div>
 
 	<br>
-	<div id="masonry" class="ui container">
+
+	<br>
+	<div id="masonry">
 	  <div class="grid-sizer"></div>
 	  <div  class="grid-item background" href="#">
 	  	<div class="ui fluid card">
 		  <div class="content">
 		    <div class="right floated meta">1h</div>
-		    <img class="ui avatar image" src="img/minjoo.jpg"> Background
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Background - Introduction
+		  </div>
+		  <div class="image">
+		    <img src="img/aboutMe.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> Made a new account! Hello! I'm Minjoo Cha, a Korean Canadian who graduated from McGill (Bsc. Computer Science '16). <span style = "color:blue;">#Pumped4Work #NoLongerStudent #ByeByeMcGill</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item interests" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - Introduction
+		  </div>
+		  <div class="image">
+		    <img src="img/8.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> Hi Minjoo here! I love to create and part of creating is also the ability to bring inspiration and character to anyone who enjoys my creations. A world where I can express through coding! Art in the form of code. <span style = "color:blue;">#Art #butCoding #NeverTiredToCreate</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item interests" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - Front End Development
 		  </div>
 		  <div class="image">
 		    <img src="img/1.jpg">
 		  </div>
 		  <div class="content">
-		    <h4>Sports</h4>
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
 		  </div>
-		  <div class="extra content">
-		    <div class="ui large transparent left icon input">
-		      <i class="heart outline icon"></i>
-		      <input type="text" placeholder="Add Comment...">
-		    </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> I love front-end development! Especially how I can see and show to others what I've made, and give inspiration! <span style = "color:blue;">#FeelingGood #FrontEndDev</span></p>
 		  </div>
 		</div>
 	  </div>
-	  <div  class="grid-item" href="#">
+	  <div  class="grid-item interests" href="#">
 	  	<div class="ui fluid card">
 		  <div class="content">
-		    <div class="right floated meta">14h</div>
-		    <img class="ui avatar image" src="img/minjoo.jpg"> Elliot
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - Fullstack Development
 		  </div>
 		  <div class="image">
 		    <img src="img/2.jpg">
@@ -79,19 +177,16 @@
 		    <i class="comment icon"></i>
 		    3 comments
 		  </div>
-		  <div class="extra content">
-		    <div class="ui large transparent left icon input">
-		      <i class="heart outline icon"></i>
-		      <input type="text" placeholder="Add Comment...">
-		    </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> I hope with my expertise in front end development and backend development will one day be a solid fullstack developer <span style = "color:blue;">#Excitement</span></p>
 		  </div>
 		</div>
 	  </div>
-	  <div  class="grid-item" href="#">
+	  <div  class="grid-item interests" href="#">
 	  	<div class="ui fluid card">
 		  <div class="content">
-		    <div class="right floated meta">14h</div>
-		    <img class="ui avatar image" src="img/minjoo.jpg"> Elliot
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - E-commerce
 		  </div>
 		  <div class="image">
 		    <img src="img/3.jpg">
@@ -104,19 +199,16 @@
 		    <i class="comment icon"></i>
 		    3 comments
 		  </div>
-		  <div class="extra content">
-		    <div class="ui large transparent left icon input">
-		      <i class="heart outline icon"></i>
-		      <input type="text" placeholder="Add Comment...">
-		    </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> The field of e-commerce and its potential for growth is limitless! Especially with the tech evolving. I want to be a part of this consumer oriented field becuase what I do will affect the world and the people who use it! <span style = "color:blue;">#E-commerce #ImakeYouBuy #Inspiration</span></p>
 		  </div>
 		</div>
 	  </div>
-	  <div  class="grid-item" href="#">
+	  <div  class="grid-item interests" href="#">
 	  	<div class="ui fluid card">
 		  <div class="content">
-		    <div class="right floated meta">14h</div>
-		    <img class="ui avatar image" src="img/minjoo.jpg"> Elliot
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - Travel/Accomodation
 		  </div>
 		  <div class="image">
 		    <img src="img/4.jpg">
@@ -129,19 +221,16 @@
 		    <i class="comment icon"></i>
 		    3 comments
 		  </div>
-		  <div class="extra content">
-		    <div class="ui large transparent left icon input">
-		      <i class="heart outline icon"></i>
-		      <input type="text" placeholder="Add Comment...">
-		    </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> As much as I love travelling, I want to share this passion with everyone! I want to be involved in this field to make tracvelling a more viable option for people who can't! Whether it be to find the cheapest pricing or to virtually give the experience, I want to be a part of it for the world! <span style = "color:blue;">#Travel #TravellingIsAThing #EveryoneNeedsIt</span></p>
 		  </div>
 		</div>
 	  </div>
-	  <div  class="grid-item" href="#">
+	  <div  class="grid-item interests" href="#">
 	  	<div class="ui fluid card">
 		  <div class="content">
-		    <div class="right floated meta">14h</div>
-		    <img class="ui avatar image" src="img/minjoo.jpg"> Elliot
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - Game Development
 		  </div>
 		  <div class="image">
 		    <img src="img/5.jpg">
@@ -154,17 +243,148 @@
 		    <i class="comment icon"></i>
 		    3 comments
 		  </div>
-		  <div class="extra content">
-		    <div class="ui large transparent left icon input">
-		      <i class="heart outline icon"></i>
-		      <input type="text" placeholder="Add Comment...">
-		    </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> Not only a hobby of mine, but also something I want to persue! A world that I can make with solely my imagination. But also equally realistic! An inspiration filled with stories and excitement! I LOVE GAMING and the endless possibilities it brings! <span style = "color:blue;">#GamerLyfe #AllDayEveryDay</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item interests" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Interests - Digital Media/Production (front-end Development)
+		  </div>
+		  <div class="image">
+		    <img src="img/6.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> Media in the form of literature to movies to animations much like gaming has a world of its own, and followers who get inspired. The spark of inspiration that one day I'll have produced my own form of media that everyone will love is a dream for me.<span style = "color:blue;">#NewPixar #NextGenDisney #MinjooProductions</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item hobbies" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Hobbies - Introduction
+		  </div>
+		  <div class="image">
+		    <img src="img/9.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> I want to be inspired and whatever I can do to get inspired, I do as a hobby <span style = "color:blue;">#DailyInspiration</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item hobbies" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Hobbies - Gaming
+		  </div>
+		  <div class="image">
+		    <img src="img/10.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> The more I play the more I have ideas of my own game that I want to create. Simple as that! <span style = "color:blue;">#DailyInspiration</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item hobbies" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Hobbies - Movies
+		  </div>
+		  <div class="image">
+		    <img src="img/11.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> Exposed to a lot of media from movies to web surfing to youtube surfing, I get to pinpoint the great or unique things to add to my collection of creativity. <span style = "color:blue;">#DailyInspiration</span></p>
+		  </div>
+		</div>
+	  </div>
+	  <div  class="grid-item hobbies" href="#">
+	  	<div class="ui fluid card">
+		  <div class="content">
+		    <div class="right floated meta">1h</div>
+		    <img class="ui avatar image" src="img/minjoo.jpg"> @Hobbies - Cooking
+		  </div>
+		  <div class="image">
+		    <img src="img/14.jpg">
+		  </div>
+		  <div class="content">
+		    <span class="right floated">
+		      <i class="heart outline like icon"></i>
+		      17 likes
+		    </span>
+		    <i class="comment icon"></i>
+		    3 comments
+		  </div>
+		  <div class="content">
+		    <p><b>MinjooCha</b> Cooking is another form of art - Culinary Arts. Cooking not only fills my stomach but allows me to let my creativity pour out into the dishes I make for myself and for the people I cook for! Too much alike development! <span style = "color:blue;">#CookingCode #GordonRamsay</span></p>
 		  </div>
 		</div>
 	  </div>
 	</div>
 
-	
+		<div class="ui inverted footer segment">
+	    <div class="ui container">
+	      <div id="footer" class="ui stackable inverted equal height stackable grid container">
+	      	<div class= "ten wide column">
+	      		<h4 class="ui inverted header">MINJOO &nbsp;CHA&nbsp; ©&nbsp; 2017 &nbsp; |&nbsp;  minjoo.cha0729@gmail.com  &nbsp;|&nbsp;  (514) &nbsp;824 - 8332</h4>
+	      	</div>
+	      	<div class = "right floating  six wide column">
+	      		<div class = "ui relaxed center aligned inverted grid container">
+		      	  <div class="column"><a href="https://www.facebook.com/mintothejoo"  target="_blank">
+				      <button class="ui circular facebook icon button"><i class="facebook icon"></i></button></a></div>
+				  <div class=" column"><a href="https://github.com/mintothejoo"  target="_blank">
+				      <button class="ui circular github icon button"><i class="github icon"></i></button></a></div>
+				  <div class=" column"><a href="https://www.linkedin.com/in/minjoo-cha-30a245115/"  target="_blank">
+				      <button class="ui circular linkedin icon button"><i class="linkedin icon"></i></button></a></div>
+				  <div class=" column"><a href="https://www.instagram.com/mintothejoo/?hl=en"  target="_blank">
+				      <button class="ui circular instagram icon button"><i class="instagram icon"></i></button></a></div>
+				  <div class=" column"><a href="https://angel.co/minjoo-cha"  target="_blank">
+				      <button class="ui circular angellist icon button"><i class="angellist icon"></i></button></a></div>
+			      <div class=" column"><a href="mailto:minjoo.cha0729@gmail.com">
+			      	  <button class="ui circular red google icon button"><i class="google icon"></i></button></a></div>
+		      	</div>
+	      	</div>
+	      </div>
+	    </div>
+	</div>
 
 	
 
