@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +7,6 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
 
 	<title> Minjoo Cha </title>
 
@@ -40,24 +40,56 @@
 <body>
 
 	<div id = "masthead" class = "ui inverted vertical masthead center aligned segment">
-		<!-- <div class = "ui container"> 
-
-			<div id="menu" class = "ui large secondary inverted pointing one item menu">
-				<a id="name" class = "item" href="index.html">
-					-MinjooCha-
+		<div id="menuMobile" class = "ui secondary four item inverted menu" style = "display:none;">
+			<a class = "left item">Projects</a>
+			<a id="name" class = "two item" href="index.html">
+				-Minjoo Cha-
+			</a>
+			<a class = "right item">Resume</a><!-- 
+			<div class = "right item">
+				<a class = "item">Projects</a>
+				<a class = "item" href="about.html">About</a>
+				<a class = "item">Blog</a>
+				<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
+			</div> -->
+		</div>
+		<div id="menuComp" class = "ui secondary inverted menu" >
+			<div class = "ui container">
+				<a id="name" class = "two item" href="index.html">
+					-Minjoo Cha-
 				</a>
+
+				<div class = "right item">
+					<a class = "item" href="skills.html">Skills</a>
+					<a class = "item" href="about.html">About</a>
+					<a class = "item">Blog</a>
+					<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
+				</div>
 			</div>
+		</div>
 
-
-		</div> -->
 		<br>
-		<img id = "circularImage" class = "ui medium centered circular image" src="img/minjoo.jpg">
 		<br>
-		<span class="element"></span>
+<!-- 		<img id = "circularImage" class = "ui medium centered circular image" src="img/minjoo.jpg"> -->
+		<span class="elementSkills"></span>
 
+		<br>
+		<br>
+		<br>
+		<div class = "ui container">
+			<select name="skills" multiple="" class="ui inverted dropdown">
+			  	<option value="">Filter</option>
+				<option value=".webDev" data-filter="webdev">Website Dev</option>
+				<option value=".gamedev" data-filter="gamedev">Game Dev</option>
+				<option value=".other" data-filter="other">Technical</option>
+				<option value=".programminglanguages" data-filter="programminglanguages">Programming Languages</option>
+			</select>
+		</div>
+		<br>
+		<br>
 	</div>
 
-
+	
 	<div id="fixedMenu" class = "ui fixed small borderless pointing menu">
 		<div class = "ui container"> 
 			<a id="name" class = "item" href="#">
@@ -66,73 +98,54 @@
 			<div class = "right item">
 				<a class = "item">Projects</a>
 				<a class = "item" href="about.html">About</a>
-				<a class = "item" href="skills.html">Skills</a>
 				<a class = "item">Blog</a>
 				<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="ui left fixed secondary vertical menu" id="verticalNav">
-	  <div class="item"><a href="https://www.facebook.com/mintothejoo">
-	      <button class="ui circular facebook icon button"><i class="facebook icon"></i></button></a></div>
-	  <div class="item"><a href="https://github.com/mintothejoo"  target="_blank">
-	      <button class="ui circular github icon button"><i class="github icon"></i></button></a></div>
-	  <div class="item"><a href="https://www.linkedin.com/in/minjoo-cha-30a245115/"  target="_blank">
-	      <button class="ui circular linkedin icon button"><i class="linkedin icon"></i></button></a></div>
-	  <div class="item"><a href="https://www.instagram.com/mintothejoo/?hl=en" target="_blank">
-	      <button class="ui circular instagram icon button"><i class="instagram icon"></i></button></a></div>
-	  <div class="item"><a href="https://angel.co/minjoo-cha"  target="_blank">
-	      <button class="ui circular angellist icon button"><i class="angellist icon"></i></button></a></div>
-      <div class="item"><a href="mailto:minjoo.cha0729@gmail.com">
-      	  <button class="ui circular red google icon button"><i class="google icon"></i></button></a></div>
-	</div>
-
-	<div id="content"></div>
 	<br>
-	<div id="masonry" >
-	  <div class="grid-sizer"></div>
-	  <a id="landingGrid" class="grid-item" href="about.html">
-	  	<div class = "ui image">
-	  		<div class = "ui large teal ribbon label"> @About </div>
-	  		<img src="img/7.jpg" />
-	  	</div>
-	  </a>
-	  <a id="landingGrid" class="grid-item" href="projects.html">
-	  	<div class = "ui image">
-	  		<div class = "ui large red ribbon label">@Projects</div>
-	  		<img src="img/2.jpg" />
-	  	</div>
-	  </a>
-	  <a id="landingGrid" class="grid-item" href="skills.html">
-	  	<div class = "ui image">
-	  		<div class = "ui large white ribbon label">@Skills</div>
-	  		<img src="img/14.jpg" />
-	  	</div>
-	  </a>
-	  <a id="landingGrid" class="grid-item" href="#">
-	  	<div class = "ui image">
-	  		<div class = "ui large blue ribbon label">@Blog</div>
-	  		<img src="img/6.jpg" />
-	  	</div>
-	  </a>
-	  <a id="landingGrid" class="grid-item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">
-	  	<div class = "ui image">
-	  		<div class = "ui large yellow ribbon label">@Resume</div>
-	  		<img src="img/3_1.jpg" />
-	  	</div>
-	  </a>
+	<br>
+
+	<div id="masonry" class="project">
+		<div class = "grid-sizer"></div>
+		<div class = "grid-item">
+			<div class = "ui fluid special card">
+				<div class="blurring dimmable image">
+			      <div class="ui dimmer">
+			        <div class="content">
+			          <div class="center">
+			            <div class="ui inverted button">View Project</div>
+			          </div>
+			        </div>
+			      </div>
+			      <img src="img/minjoo.jpg">
+			    </div>
+			    <div class="content">
+			      <a class="header">Team Fu</a>
+			      <div class="meta">
+			        <span class="date">Create in Sep 2014</span>
+			      </div>
+			    </div>
+			    <div class="extra content">
+			      <a>
+			        <i class="users icon"></i>
+			        2 Members
+			      </a>
+			    </div>
+			</div>
+		</div>
 	</div>
 
 	
 
 	<div class="ui inverted footer segment">
 	    <div class="ui container">
-	      <div id="footer" class="ui centered stackable divided inverted equal height stackable grid container">
-	      	<div id = "dirCol" class= "ten wide column">
+	      <div id="footer" class="ui stackable inverted equal height stackable grid container">
+	      	<div class= "ten wide column">
 	      		<h4 class="ui inverted header">MINJOO &nbsp;CHA&nbsp; ©&nbsp; 2017 &nbsp; |&nbsp;  minjoo.cha0729@gmail.com  &nbsp;|&nbsp;  (514) &nbsp;824 - 8332</h4>
 	      	</div>
-	      	<div id = "dirCol" class = "right floating  six wide column">
+	      	<div class = "right floating  six wide column">
 	      		<div class = "ui relaxed center aligned inverted grid container">
 		      	  <div class="column"><a href="https://www.facebook.com/mintothejoo"  target="_blank">
 				      <button class="ui circular facebook icon button"><i class="facebook icon"></i></button></a></div>

@@ -1,15 +1,11 @@
 /** { box-sizing: border-box; }*/
 
 /* force scrollbar */
-/*html { 
-    width:100%; 
+html { 
     display: table;
-}*/
+}
 
-/*body{
-    width:100%;
-    display: table;
-}*/
+
 html,body
 {
     width: 100%;
@@ -17,7 +13,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-}
+}   
 
 h4{
     font-family: 'poppins', cursive;
@@ -28,8 +24,26 @@ h4{
     font-family: 'poppins', cursive;
 }
 
+#menu .left.item {
+    padding-right: 20px!important;
+}
+
+#menu .right.item{
+    padding-left: 20px!important;
+}
+#menu #name{
+    width:50%!important;
+}
+
 .ui.fluid.card{
     font-family: 'poppins', cursive;
+}
+.ui.special.card{
+    font-family: 'poppins',cursive;
+}
+.ui.special.card .progress{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .element, .elementAbout, .elementSkills{
     font-family: 'Kalam', cursive;
@@ -122,6 +136,9 @@ h4{
 /* ---- .grid-item ---- */
 
 /* ---- .grid-item ---- */
+.skills .grid-item{
+    z-index: -10;
+}
 
 .grid-sizer,
 .grid-item {
@@ -168,7 +185,11 @@ h4{
     }
     #menu #name, #fixedMenu{
         font-family: 'poppins', cursive;
-        font-size: 30px;
+        font-size: 35px;
+    }
+    #menu .item{
+        font-family: 'poppins',cursive;
+        font-size: 18px;
     }
     .grid-sizer, .grid-item { 
         width: 50%;
@@ -185,57 +206,34 @@ h4{
     .grid-sizer, .grid-item { 
         width: 100%;
     }
+    #menu #name, #fixedMenu{
+        font-family: 'poppins', cursive;
+        font-size: 30px;
+    }
+    #menu .item{
+        font-family: 'poppins',cursive;
+        font-size: 15px;
+    }
      #masonry{
         width:300px!important;
     }
 
 }
-@media(max-width: 399px){
-    
+@media(max-width: 432px){
+    #menu #name, #fixedMenu{
+        font-family: 'poppins', cursive;
+        font-size: 20px;
+    }
+    #menu .item{
+        font-family: 'poppins',cursive;
+        font-size: 10px;
+    }
      #masonry{
         width:250px!important;
     }
 }
 
-/**** Start: Recommended Isotope styles ****/
-/**** Isotope Filtering ****/
-.isotope-item {
-    z-index: 2;
-}
-.isotope-hidden.isotope-item {
-    pointer-events: none;
-    z-index: 1;
-}
-/**** Isotope CSS3 transitions ****/
-.isotope .isotope-item {
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-}
-.isotope .isotope-item {
-    -webkit-transition-property: -webkit-transform, opacity;
-    -moz-transition-property: -moz-transform, opacity;
-    -ms-transition-property: -ms-transform, opacity;
-    -o-transition-property: top, left, opacity;
-    transition-property: transform, opacity;
-/*    -webkit-transition-delay: 0s, 0.8s, 0s;
-    -moz-transition-delay: 0s, 0.8s, 0s;
-    -ms-transition-delay: 0s, 0.8s, 0s;
-    -o-transition-delay: 0s, 0.8s, 0s;
-    transition-delay: 0s, 0.8s, 0s;*/
-}
-/**** disabling Isotope CSS3 transitions ****/
-.isotope.no-transition,
-.isotope.no-transition .isotope-item,
-.isotope .isotope-item.no-transition {
-    -webkit-transition-duration: 0s;
-    -moz-transition-duration: 0s;
-    -ms-transition-duration: 0s;
-    -o-transition-duration: 0s;
-    transition-duration: 0s;
-}
+
 
 /*Footer*/
 #footer .ten.wide.column{

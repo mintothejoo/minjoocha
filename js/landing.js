@@ -34,6 +34,15 @@ $(document).ready(function(){
     	}
     });
 
+    $('.progress').progress();
+
+    $('.special.card .image').dimmer({
+    	on:'hover',
+    });
+    //Project Card
+
+
+
 	// console.log($(window).scrollTop().valueOf());
  //    $(window).scroll(function (e){
  //    	console.log($(window).scrollTop());
@@ -168,6 +177,26 @@ $(document).ready(function(){
 			}
 	});
 
+	var $skills = $('#skills').isotope({
+		itemSelector: '.grid-item',
+		percentPosition:true,
+		gutter:20,
+		masonry: {
+		    columnWidth: '.grid-sizer',
+		    gutter:10,
+		    fitWidth:true
+	  	},
+	  	getSortData:{
+	  		expertise:'[data-expertise] parseInt'
+	  	}
+	});
+
+	$skills.imagesLoaded().progress(function(){
+		$skills.isotope('layout');
+	});
+
+	$skills.isotope({sortBy:'expertise'});
+
 	var $grid = $('#masonry').isotope({
 	  itemSelector: '.grid-item',
 	  percentPosition: true,
@@ -192,6 +221,7 @@ $(document).ready(function(){
 		action: 'combo',
 		onChange: function(value,text,$selectedItem){
 			$grid.isotope({filter : value.toString()});
+			$skills.isotope({sortBy: 'expertise'});
 		}
 	});
 

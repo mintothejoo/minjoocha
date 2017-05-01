@@ -40,14 +40,27 @@
 <body>
 
 	<div id = "masthead" class = "ui inverted vertical masthead center aligned segment">
-		<div class = "ui container"> 
-
-			<div id="menu" class = "ui large secondary inverted pointing menu">
-				<a id="name" class = "item" href="index.html">
+		<div id="menuMobile" class = "ui secondary four item inverted menu" style = "display:none;">
+			<a class = "left item">Projects</a>
+			<a id="name" class = "two item" href="index.html">
+				-Minjoo Cha-
+			</a>
+			<a class = "right item">Resume</a><!-- 
+			<div class = "right item">
+				<a class = "item">Projects</a>
+				<a class = "item" href="about.html">About</a>
+				<a class = "item">Blog</a>
+				<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
+			</div> -->
+		</div>
+		<div id="menuComp" class = "ui secondary inverted menu" >
+			<div class = "ui container">
+				<a id="name" class = "two item" href="index.html">
 					-Minjoo Cha-
 				</a>
+
 				<div class = "right item">
-					<a class = "item">Projects</a>
+					<a class = "item" href="projects.html">Projects</a>
 					<a class = "item" href="about.html">About</a>
 					<a class = "item">Blog</a>
 					<a class = "item" href="https://drive.google.com/file/d/0Bzq1eki_PwEcMC1pa1B6UXIwZGc/view" target="_blank">Resume</a>
@@ -61,6 +74,17 @@
 		<span class="elementSkills"></span>
 
 		<br>
+		<br>
+		<br>
+		<div class = "ui container">
+			<select name="skills" multiple="" class="ui inverted dropdown">
+			  	<option value="">Filter</option>
+				<option value=".webDev" data-filter="webdev">Website Dev</option>
+				<option value=".gamedev" data-filter="gamedev">Game Dev</option>
+				<option value=".other" data-filter="other">Technical</option>
+				<option value=".programminglanguages" data-filter="programminglanguages">Programming Languages</option>
+			</select>
+		</div>
 		<br>
 		<br>
 	</div>
@@ -80,6 +104,468 @@
 		</div>
 	</div>
 
+	<br>
+	<br>
+
+	<div id = "masonry" class="skills">
+
+		<div class = "grid-sizer"></div>
+		
+		<div class = "grid-item webDev" data-expertise = "3">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_mongodb.png">
+			      <div class="header">
+			        MongoDB
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Backend database to store object models, complex querying and manipulation of returned values in database.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui yellow inverted progress" data-value = "3" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Advanced</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item webDev" data-expertise = "2">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_react.png">
+			      <div class="header">
+			        React.js
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Instant reactive update of content. Able to update through server directly to database or directly through javascript.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui olive inverted progress" data-value = "2" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Intermediate</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item webDev" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_javascript.png">
+			      <div class="header">
+			        Typed/Masonry.js
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Varius javascript frameworks for web development designs
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui orange inverted progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item webDev" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_json.png">
+			      <div class="header">
+			        JSON
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Data passing syntax, used for server side integration to the database as well as client side updates.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui orange inverted progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item webDev" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_nodejs.png">
+			      <div class="header">
+			        Node.js (express)
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Builds controllers and routes to render pages with the given database values. We retrieve these values to update the page accordingly.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui orange inverted progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item webDev" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_semanticui.png">
+			      <div class="header">
+			        Semantic UI
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Front end framework like bootstrap but with easier semantics and customizable features. Also comes with build in response handling for each feature
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted orange progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item webDev" data-expertise = "1">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_uiux.jpg">
+			      <div class="header">
+			        UI/UX design 
+			      </div>
+			      <div class="meta">
+			        Web Development
+			      </div>
+			      <div class="description">
+			        Layout structure, font typescripts, responsive layout
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui green inverted progress" data-value = "1" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Beginner</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+		
+		<div class = "grid-item gamedev" data-expertise = "3">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_unity.png">
+			      <div class="header">
+			        Unity 3D 
+			      </div>
+			      <div class="meta">
+			        Game Development
+			      </div>
+			      <div class="description">
+			        3D sprite rendering, heightmaps, player control, pov camera script, object interactions. All done to develop a game.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui yellow inverted progress" data-value = "3" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Advanced</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+		
+		<div class = "grid-item other" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_github.gif">
+			      <div class="header">
+			        GIT
+			      </div>
+			      <div class="meta">
+			        Other
+			      </div>
+			      <div class="description">
+			        Git repository collaboration. 
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted orange progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item other" data-expertise = "2">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_software.png">
+			      <div class="header">
+			        Software Architecture Analysis
+			      </div>
+			      <div class="meta">
+			        Other
+			      </div>
+			      <div class="description">
+			        Reverse Engineering a software, develop architectural models for software, identify good and bad practice of software based off of energy analysis.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted olive progress" data-value = "2" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Intermediate</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item other" data-expertise = "2">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_ml.png">
+			      <div class="header">
+			        Machine Learning Algorithms
+			      </div>
+			      <div class="meta">
+			        Other
+			      </div>
+			      <div class="description">
+			        Classify and train the various problems and predict the outcome using the appropriate algorithms to classify or predict the result.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted olive progress" data-value = "2" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Intermediate</div>
+			      </div>
+			    </div>
+		  </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_java.png">
+			      <div class="header">
+			        Java
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			        OOP, Class/object structure, visual UI (swing/awt) 
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted orange progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_javascript.png">
+			      <div class="header">
+			        Javascript
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted orange progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "3 ">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_python.png">
+			      <div class="header">
+			        Python
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      	Mainly used for Machine Learning, retrieving data, preprocessing data into features, learning/training algorithms etc.
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted yellow progress" data-value = "3" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Advanced</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_c.png">
+			      <div class="header">
+			        C
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted orange progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "3">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_csharp.png">
+			      <div class="header">
+			        C#
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      	Mainly used for game development with Unity
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted yellow progress" data-value = "3" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Advanced</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "2">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_cpp.png">
+			      <div class="header">
+			        C++
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted olive progress" data-value = "2" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Intermediate</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "4">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_htmlcss.png">
+			      <div class="header">
+			        HTML/CSS
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      	Web Development front end
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted orange progress" data-value = "4" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Expert</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+		<div class = "grid-item programminglanguages" data-expertise = "2">
+			<div class="ui fluid card">
+			    <div class="content">
+			      <img class="right floated mini ui image" src="img/skills_fsharp.png">
+			      <div class="header">
+			        F#/Scala/Functional Programming
+			      </div>
+			      <div class="meta">
+			        Programming Languages
+			      </div>
+			      <div class="description">
+			      </div>
+			    </div>
+			    <div class="extra content" style = "background-color:gray;">
+			      <div class = "ui inverted olive progress" data-value = "2" data-total="5">
+			      	<div class = "bar">
+			      	</div>
+			      	<div class = "label">Intermediate</div>
+			      </div>
+			    </div>
+		    </div>
+		</div>
+
+
+
+	</div>
 
 	
 
