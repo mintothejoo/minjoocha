@@ -20,6 +20,10 @@ h4{
     margin-top: 30px;
     vertical-align: center;
 }
+.masonry.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 #menu, #fixedMenu, #menuBotMobile, #menuMobile, #menuTopMobile{
     font-family: 'poppins', cursive;
 }
@@ -123,6 +127,7 @@ h4{
 
 #masonry {
     width:1200px!important;
+    position:absolute;
     display: table;
     height: 75%; /* inherit height from body */
     margin: 0 auto;
@@ -161,6 +166,7 @@ h4{
 @media(max-width: 1212px){
     #masonry{
         width:1000px!important;
+        margin: 0 auto;
     }
 
 }
