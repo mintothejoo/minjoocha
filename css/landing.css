@@ -20,8 +20,11 @@ h4{
     margin-top: 30px;
     vertical-align: center;
 }
-#menu, #fixedMenu{
+#menu, #fixedMenu, #menuBotMobile, #menuMobile, #menuTopMobile{
     font-family: 'poppins', cursive;
+}
+#menuTopMobile{
+    visibility: hidden!important;
 }
 
 #menu .left.item {
@@ -159,6 +162,7 @@ h4{
     #masonry{
         width:1000px!important;
     }
+
 }
 @media(max-width: 1033px){
      #masonry{
@@ -170,9 +174,7 @@ h4{
     }
 }
 @media(max-width: 833px){
-    #fixedMenu{
-        visibility: hidden!important;
-    }
+
     #verticalNav{
         visibility: hidden!important;
     }
@@ -183,11 +185,11 @@ h4{
         font-family: 'Kalam', cursive;
         font-size: 30px;
     }
-    #menu #name, #fixedMenu{
+    #menu #name, #fixedMenu #name{
         font-family: 'poppins', cursive;
         font-size: 35px;
     }
-    #menu .item{
+    #menu .item, #fixedMenu .item{
         font-family: 'poppins',cursive;
         font-size: 18px;
     }
@@ -202,34 +204,93 @@ h4{
     }
 
 }
+@media(max-width:656px){
+    #fixedMenu{
+        visibility: hidden!important;
+    }
+    #menuComp{
+        display:none;
+    }
+    #menuBotMobile, #menuTopMobile{
+        height:70px;
+        border-style:none;
+        border-radius: 0!important;
+    }
+    #menuBotMobile .item{
+        padding-top: 2%;
+        padding-bottom: 0;
+    }
+    #menuBotMobile #name{
+        padding-top:2%;
+    }
+    #menuMobile, #menuBotMobile{
+        display:inline-block!important;
+    }
+    #menuTopMobile {
+        visibility: visible!important;
+    }
+    #menuMobile .two.item, #menuBotMobile .two.item, #menuTopMobile .two.item{
+        width:50%;
+    }
+     #menuMobile #name, #menuTopMobile #name, #menuBotMobile #name{
+        font-size: 30px;
+    }
+    #menuMobile .item, #menuTopMobile .item, #menuBotMobile .item{
+        font-size: 13px;
+    }
+    #menuBotMobile, #menuTopMobile{
+        height:50px;
+    }
+    .ui.inverted.footer.segment{
+        display:none;
+    }
+
+}
 @media(max-width: 608px){
     .grid-sizer, .grid-item { 
         width: 100%;
     }
-    #menu #name, #fixedMenu{
-        font-family: 'poppins', cursive;
-        font-size: 30px;
-    }
-    #menu .item{
-        font-family: 'poppins',cursive;
-        font-size: 15px;
-    }
+
      #masonry{
         width:300px!important;
     }
 
 }
-@media(max-width: 432px){
-    #menu #name, #fixedMenu{
-        font-family: 'poppins', cursive;
-        font-size: 20px;
+@media(max-width: 459px){
+    #menuBotMobile, #menuTopMobile{
+        height:50px;
     }
-    #menu .item{
-        font-family: 'poppins',cursive;
-        font-size: 10px;
+
+    #menuMobile #name, #menuTopMobile #name, #menuBotMobile #name{
+        font-size: 25px;
+    }
+    #menuMobile .item, #menuTopMobile .item, #menuBotMobile .item{
+        font-size: 13px;
+    }
+    #menuBotMobile #name{
+        padding-top:3%;
     }
      #masonry{
         width:250px!important;
+    }
+}
+
+@media(max-width: 340px){
+    #menuBotMobile, #menuTopMobile{
+        height:40px;
+    }
+    #menuMobile #name, #menuTopMobile #name, #menuBotMobile #name{
+        font-size: 20px;
+    }
+    #menuMobile .item, #menuTopMobile .item, #menuBotMobile .item{
+        font-size: 10px;
+    }
+    #menuBotMobile .item{
+        padding-top: %;
+        padding-bottom: 0;
+    }
+    #menuBotMobile .two.item{
+        padding-top:3%;
     }
 }
 
@@ -257,6 +318,11 @@ h4{
     box-shadow: 4px 5px 3px #828282;
 }
 
-
+/*Footer popup*/
+#footerPopUp .ui.grid .inverted.row{
+    margin:0;
+    color:white;
+    background-color: grey;
+}
 
 

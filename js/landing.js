@@ -11,22 +11,24 @@
 
 
 $(document).ready(function(){
+	$('#menuTopMobile').visibility('hidden');
 	$('.masthead').visibility({
 	      once: false,
 	      onBottomPassed: function() {
 	      	$('#verticalNav').transition('fade out');
 	      	$('#fixedMenu').transition('fade in');
+	      	$('#menuTopMobile').transition('fade in');
 	      },
 	      onBottomPassedReverse: function() {
 	      	$('#verticalNav').transition('fade in');
 	      	$('#fixedMenu').transition('fade out');
+	      	$('#menuTopMobile').transition('fade out');
 	      }
     });
 
     $('.ui.footer').visibility({
     	once:false,
     	onTopVisible: function(){
-    		console.log("HIHI");
     		$('#verticalNav').transition('fade out');
     	},
     	onTopVisibleReverse: function(){
@@ -38,6 +40,13 @@ $(document).ready(function(){
 
     $('.special.card .image').dimmer({
     	on:'hover',
+    });
+
+    $('#menuBotMobile #name').popup({
+    	popup: '#footerPopUp',
+    	inline:true,
+    	position: 'top center',
+    	on:'click'
     });
     //Project Card
 
