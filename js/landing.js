@@ -77,6 +77,12 @@ $(document).ready(function(){
 		backDelay: 1000,
 	});
 
+	$(".elementProjects").typed({
+		strings: ["Here are my <u>Projects</u>."],
+		typeSpeed: 50,
+		backDelay: 1000,
+	});
+
 
     $(".elementAbout").typed({
 		strings: ["This is <u>Who I am</u>.","This is <u>What I love</u>.","This is <u>About Me</u>."],

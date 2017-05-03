@@ -48,7 +48,7 @@ h4{
     margin-left: 10%;
     margin-right: 10%;
 }
-.element, .elementAbout, .elementSkills{
+.element, .elementAbout, .elementSkills, .elementProjects{
     font-family: 'Kalam', cursive;
     font-size: 40px;
 }
@@ -181,7 +181,7 @@ h4{
     #masthead #circularImage{
         width:200px;
     }
-    .element, .elementAbout, .elementSkills{
+    .element, .elementAbout, .elementSkills, .elementProjects{
         font-family: 'Kalam', cursive;
         font-size: 30px;
     }
@@ -318,11 +318,26 @@ h4{
     box-shadow: 4px 5px 3px #828282;
 }
 
+#footer .six.wide.column .column{
+    margin-right: 10px;
+}
+
 /*Footer popup*/
 #footerPopUp .ui.grid .inverted.row{
     margin:0;
     color:white;
     background-color: grey;
+}
+
+#footerPopUp .ui.circular.buttons .column{
+    margin-right: 10px;
+}
+
+/*Projects Page specifically*/
+
+#masonry .ui.label{
+    margin-bottom: 5px;
+
 }
 
 
