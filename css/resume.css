@@ -1,0 +1,76 @@
+body{
+	font-family: 'poppins', cursive;
+	background-color: #d3d3d3;
+	font-size: 13px;
+}
+
+/*star command blue (darkest) = #007BB8
+  camarone green (dark)= #005A04
+  Green Reef (brightest)= #CCFFBB
+  Grean leaf/yellow (bright)= #3A5F0B
+  Camarone green (darker) = #005502*/
+.ui.header{
+	font-family: 'poppins', cursive;
+	font-weight: 300;
+}
+#about{
+	font size: 10px!important;
+	color:white;
+}
+
+#masthead{
+    /*background: url("https://source.unsplash.com/collection/654220");*/
+    /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url("https://source.unsplash.com/collection/654220");*/
+    background-position:center;
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity:0.9;
+    margin:0;
+}
+
+.left.floated{
+	float: left;
+}
+.right.floated{
+	float:right;
+}
+.center.floated{
+	text-align: center;
+}
+#masthead a{
+	color:grey;
+}
+
+.ui.clearing.basic.segment{
+	background-color: #d3d3d3;
+}
+
+#masthead .segment{
+    background-position:center;
+    background-color: black;
+    background-repeat: no-repeat;
+    opacity:0.9;
+    color:white;
+    margin:0;
+}
+
+#content .piled.segment, #content .tall.stacked.segment{
+	box-shadow: 4px 5px 3px #828282;
+}
+
+#name{
+	font-family: 'poppins', cursive;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+#headerPortion{
+	font-family: 'poppins', cursive;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#subheader{
+	font-family: 'poppins', cursive;
+	font-size: 25px;
+}
